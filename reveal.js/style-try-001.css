@@ -1,0 +1,152 @@
+section h2{
+    font-size: 30px; /*actually, this does nothing since reveal.js makes it automatically fit the largest available font size*/  
+}
+
+section p{
+    font-size: 26px;
+    /*padding: 20px 20px 20px 20px; /*top-right-bottom-left*/
+}
+section ul{
+    font-size: 30px;
+}
+
+section li{
+    font-size: 26px
+}
+
+.circ-icon{
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;   
+}
+
+.title-slide h1{
+    font-size: 1.5em;
+    color: #E0E0E0;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+.title-slide p{
+    font-size: 0.9em;
+    color: #C0C0C0;
+    text-shadow:
+        -2px -2px 1px #000,
+         2px -2px 1px #000,
+        -2px  2px 1px #000,
+         2px  2px 1px #000;
+}
+
+.slide-1 i{
+    font-size: 1.2em;
+    margin: 0 0.5em;
+    text-align: center; 
+}
+
+.flow {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical alignment of children */
+    gap: 0.8em;                 /* spacing between elements */
+}
+
+.equation{
+    position: center;
+    top: 20%;
+    left: 10%;
+    color: black;
+    background: rgba(255,255,255,0.85);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+
+#stars-obs{
+    width: 150px;
+    height: auto;
+}
+
+#geocentric-model{
+    width: 150px;
+    height: auto;
+    border-radius: 30%; 
+}
+
+#retro-motion{
+    width: 150px;
+    height: auto;
+    border-radius: 30%;
+}
+
+#thinking-person{
+    width: 120px;
+    height: auto;
+    border=radius: 30%;
+}
+
+#neg-res{
+    color: red;
+}
+
+.red-c{
+    color: red;
+    text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;  
+}
+
+.green-c{
+    color: #0EED49;
+    text-shadow:
+                -1px -1px 0 #134304,
+                 1px -1px 0 #134304,
+                -1px  1px 0 #134304,
+                 1px  1px 0 #134304;
+}
+
+#imp-q-v1{
+    font-size: 28px;
+    color: #08F;
+    text-shadow:
+            -1px -1px 0 #000,
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+    }
+
+#imp-q-v2{
+    font-size: 38px;
+}
+
+#ptolemy-mod{
+    width: 270px;
+    height: auto;
+    border-radius: 30%;
+}
+
+#heliocentric-model{
+    width: 270px;
+    height: auto;
+    border-radius: 30%;
+    border: 1px solid #ddd;
+}
+
+#world-line{
+    width: 300px;
+    height: auto;
+    border-radius: 30%;
+    border: 1px solid #ddd;
+}
+
+.white-back{
+    background: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+}
