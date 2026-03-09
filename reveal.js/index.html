@@ -81,14 +81,49 @@
                     <h2>Стандартен модел</h2>
                     <div class="flow r-stack" style="position: relative;">
                     <img class="fragment" src="images/standard-model.jpg">
-                    <img id="world-line" class="fragment white-back" src="images/World_line.png">
-                    <div class="fragment equation">
-                        \[i\hbar\frac{\partial}{\partial t}\Psi(\vec{r}, t) = \hat{H}\Psi(\vec{r}, t)\]
+                    <div class="fragment flow">
+                        <img id="world-line" class="white-back" src="images/World_line.png">
+                        <div style="position: relative">
+                            <div class="fragment equation">
+                                \[i\hbar\frac{\partial}{\partial t}\Psi(\vec{r}, t) = \hat{H}\Psi(\vec{r}, t)\]
+                            </div>
+                            <div class="r-stack">
+                                <img id="bohr-vs-qm" class="fragment image-smaller" src="images/bohr-vs-quantum-mech-cloud.webp">
+                                <img id="many-e-clouds" class="fragment image-smaller" src="images/many-electron-clouds.jpg">
+                            </div>
+                        </div>
                     </div>
+                </section>
+
+                <section class="slide-3" data-auto-animate>
+                    <h2>Стандартен модел</h2>
+                    <img src="images/standard-model.jpg">
+                </section>
+
+                <section class="slide-3" data-auto-animate data-autoplay>
+                    <h2>Стандартен модел</h2>
+                    <video playsinline preload="auto" muted loop src="videos/classic_repulsion.mp4"></video>
+                </section>
+
+                <section class="slide-3" data-auto-animate data-autoplay>
+                    <h2>Стандартен модел</h2>
+                    <video playsinline preload="auto" muted loop src="videos/photon_exchange.mp4"></video>
                 </section>
 
                 <section class="slide-4" data-auto-animate>
                     <h2>Неутрино!</h2>
+                    <div class="flow">
+                        <div class="fragment">
+                        \[n \rightarrow p + e^- + \bar{\nu}_e\]
+                        </div>
+                        <div class="fragment">
+                        \[^{6}_{2}He \rightarrow ^{6}_{3}Li + e^- + \bar{\nu}_e\]
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <img class="fragment image-general" src="images/beta-decay-miss-neutrino.png">
+                        <img class="fragment image-general" src="images/beta-decay-energy.jpg">
+                    </div>
                 </section>
                 
                 <section class="slide-5" data-auto-animate>
@@ -127,9 +162,21 @@
 		      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath.KaTeX ],
 		      menu: { side: 'left', numbers: true },
 		      progress: true,
-		      slideNumber: true
+		      slideNumber: true,
+		      autoPlayMedia: true
 		    });
 		  </script>
+
+		  Reveal.on('slidechanged', event => {
+		  
+		    const videos = event.currentSlide.querySelectorAll("video");
+		  
+		    videos.forEach(video => {
+		      video.currentTime = 0;
+		      video.play().catch(() => {});
+		    });
+		  
+		  });
 	    
 	</body>
 </html>

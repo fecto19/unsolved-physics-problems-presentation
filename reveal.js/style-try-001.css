@@ -20,6 +20,18 @@ section li{
      border-radius: 50%;   
 }
 
+.image-general{
+    width: 450px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.image-smaller{
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+}
+
 .title-slide h1{
     font-size: 1.5em;
     color: #E0E0E0;
@@ -149,4 +161,8 @@ section li{
     display: inline-block;
     padding: 10px;
     border-radius: 8px;
+}
+
+#slide-4{
+    gap: 1.5em;
 }
