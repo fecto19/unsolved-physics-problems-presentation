@@ -32,6 +32,12 @@ section li{
     border-radius: 10%;
 }
 
+.image-small{
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+}
+
 .title-slide h1{
     font-size: 1.5em;
     color: #E0E0E0;
