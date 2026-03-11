@@ -83,6 +83,30 @@ section li{
 }
 
 
+.box-red{
+    border-radius: 5%;
+    background-color: #cc0000;
+    border: 4px solid #7d0404;
+    font-size: 26px;
+    text-shadow:
+            -1px -1px 0px #000,
+             1px -1px 0px #000,
+            -1px  1px 0px #000,
+             1px  1px 0px #000;
+}
+
+.box-green{
+    border-radius: 5%;
+    background-color: #00cc0b;
+    border: 4px solid #02980a;
+    font-size: 26px;
+    text-shadow:
+            -1px -1px 0px #000,
+             1px -1px 0px #000,
+            -1px  1px 0px #000,
+             1px  1px 0px #000;
+}
+
 #stars-obs{
     width: 150px;
     height: auto;
