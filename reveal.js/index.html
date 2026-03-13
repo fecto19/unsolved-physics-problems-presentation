@@ -21,14 +21,22 @@
 		<script src="plugin/menu/menu.js"></script>
         <!-- MathJax 3 library -->
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <style>
+          .fragment.blur {
+            filter: blur(5px);
+          }
+          .fragment.blur.visible {
+            filter: none;
+          }
+        </style>
+        
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section class="title-slide" data-background="images/1818698.jpg">
                     <h1>Някои популярни задачи пред съвременната физика</h1>
-                    <p>Теоретична лекция по нерешени проблеми пред модерната физика, както и участието на българските учени в разгадаването им
-                    </p>
 				</section>
 				<section data-visibility="hidden">Slide X</section>
 				<section class="slide-1" data-auto-animate>
@@ -342,7 +350,7 @@
                     <p class="fragment">Обаче...</p>
                     <div class="fragment box-red">
                         <p style="font-style: italic; ">Поне едно неутрино трябва да има маса, за да има осцилации!</p>
-                        <p class="fragment" style="font-size: 30; font-style: bold">Трябва модификация на Стандартния модел!</p>
+                        <p class="fragment" style="font-size: 30; font-style: bold">Трябва допълнение на Стандартния модел!</p>
                     </div>
                 </section>
 
@@ -570,9 +578,9 @@
                         <p class="fragment red-c white-back">$m_{top}$:$m_{bottom}\approx$41:1</p>
                     </div>
                     <p class="fragment">Топ кваркът е изключително нестабилен!</p>
-                    <div class="box-red" style="gap: 0.5em;">
+                    <div class="box-red fragment" style="gap: 0.5em;">
                         <div class="flow">
-                            <p class="fragment" style="font-size: 23px;">Време на живот:</p>
+                            <p style="font-size: 23px;">Време на живот:</p>
                             <p class="fragment" style="font-weight: bold; color: #141595;">$\tau\sim 10^{-25}s$</p>
                         </div>
                         <div class="flow">
@@ -598,7 +606,7 @@
                             <div style="display: flex; gap: 0.5em;">
                                 <p>Изключително масивен!</p>
                                 <i class="fragment fa-solid fa-right-long fa-2x" style="align-items: center;"></i>
-                                <p class="fragment" style="font-style: italic;">силно взаимодействие с Хигс бозона!</p>
+                                <p class="fragment" style="font-style: italic;">интензивно взаимодействие с Хигс бозона!</p>
                             </div>                                
                         </li>
                         <li class="fragment"><p style="font-style: italic; font-weight: bold;">Изследване на механизми за генериране на маса</p></li>
@@ -622,15 +630,149 @@
                 </section>
 
                 <section class="slide-7" data-auto-animate>
-                    <h2>Как се образуват частици след сблъсък?</h2>
+                    <h2>Как се образуват частици?</h2>
+                    <p class="fragment">Вселената непосредствено след Големия взрив:</p>
+                    <img class="fragment image-smaller" src="images/primordial-creation-universe.webp">
+                    <p class="fragment" style="font-weight: bold;">Изключително гореща и плътна!</p>
+                </section>
+
+                <section class="slide-7-1" data-auto-animate>
+                    <h2>Как се образуват частици?</h2>
+                    <div class="r-stack">
+                    <div>
+                        <div class="flow">
+                            <p class="fragment">Система кварк-антиквак</p>
+                            <div class="r-stack" style="items-align: center;">
+                                <p class="fragment current-visible" style="font-style: italic; color: red;">(енергия)</p>
+                                <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                            </div>
+                            <p class="fragment"> раждат се нови кварк-антикварк</p>
+                            <img class="fragment image-smaller" src="images/color_field_snap.gif">
+                        </div>
+                        <p class="fragment">Ако добавим още енергия?</p>
+                        <div class="flow">
+                            <p class="fragment">Система ядра</p>
+                            <div class="r-stack" style="items-align: center;">
+                                <p class="fragment current-visible" style="font-style: italic; color: red;">(още повече енергия)</p>
+                                <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                            </div>
+                            <p class="fragment" style="font-style: italic; font-weight: bold;">кварките и глуоните остават в свободно състояние!</p>
+                        </div>
+                        <p class="fragment box-red">Ново състояние на материята: кварк-глуонна плазма!</p>
+                        </div>
+                        <img class="fragment image-large current-visible" src="images/quark-gluon-plasma.png">
+                    </div>
+                    <div class="flow">
+                        <p class="fragment">Колко енергия трябва да се добави?</p>
+                        <p class="fragment box-green">$T\sim 2000$ милиарда градуса!</p>
+                        <p class="fragment">(10 хиляди пъти повече от в центъра на Слънцето!)</p>
+                    </div>
+                </section>
+
+                <section class="slide-7-2" data-auto-animate>
+                    <h2>Как се образуват частици?</h2>
+                    <p class="fragment fade-down">А какво става след това?</p>
+                    <div class="flow" style="gap: 0.5em;">
+                        <p class="fragment">Разширение!</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic; color: blue;">Изстиване!</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment box-red">достигаме $T < T_{c}$</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment box-green" style="font-weight: bold;">"кондензират" много частици!</p>
+                    </div>
+                    <div class="flow">
+                        <p class="fragment" style="font-weight: bold;">Ранната Вселена:</p>
+                        <p class="fragment" style="font-style: italic;">гореща и плътна кварк-глуонна плазма</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic;">разширява се и изстива</p>
+                        <p class="fragment box-green">$10^{-6}s$</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic;">формират се частици</p>
+                    </div>
+                    <div class="flow">
+                        <p class="fragment" style="font-weight: bold;">Ускорители на частици:</p>
+                        <p class="fragment" style="font-style: italic; color: blue;"> сблъскват се ядра</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic;">кварк-глуонна плазма</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic;">разширява се и изстива</p>
+                        <p class="fragment box-green">$10^{-24}s$</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment" style="font-style: italic;">формират се частици</p>
+                    </div>
+                    <p class="fragment box-red">В ускорителите създаваме условия като в Ранната Вселена!</p>
                 </section>
 
                 <section class="slide-8" data-auto-animate>
-                    <h2>Fire ball stuff</h2>
+                    <h2>А как се образуват леки ядра?</h2>
+                    <p class="fragment" style="font-style: italic;">(в Ранната Вселена)</p>
+                    <p class="fragment">Вече имаме протони и неутрони!</p>
+                    <p class="fragment">Най-простата свързана система: неутрон и протон (деутрон)</p>
+                    <div class="flow box-red fragment">
+                        <p>Проблем!</p>
+                        <p class="fragment">Деутронът е слабо свързана система!</p>
+                    </div>
+                    <div class="flow box-green fragment">
+                        <p>още охлаждане и разширение</p>
+                        <p class="fragment">$10s-20min$</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment">деутрон</p>
+                        <i class="fragment fa-solid fa-right-long fa-2x"></i>
+                        <p class="fragment">други леки ядра</p>
+                    </div>
+                    <p class="fragment white-back" style="color: black;">$p + n \rightarrow D + \gamma$</p>
                 </section>
 
                 <section class="slide-8" data-auto-animate>
-                    <h2>Какво наричаме симетрия?</h2>
+                    <h2>А как се образуват леки ядра?</h2>
+                    <p class="fragment" style="font-style: italic;">(в ускорителите на частици)</p>
+                    <div class="fragment flow">
+                        <p>Отново: кварк-глуонна плазма</p>
+                        <p class="fragment"style="font-style: italic;">... но много по-малко!</p>
+                    </div>
+                    <p class="fragment box-red">Бързо достигане на критична температура и адронизация!</p>
+                    <div class="flow">
+                        <p class="fragment">Отново ли се формират деутрони?</p>
+                        <p class="fragment box-green" style="font-style: italic;">Да, наблюдаваме ги!</p>
+                    </div>
+                    <p class="fragment box-red">Но как не се разрушават?</p>
+                </section>
+
+                <section class="slide-8" data-auto-animate>
+                    <h2>Как се образуват деутроните?</h2>
+                    <div class="flow">
+                        <img class="fragment" src="images/ALICE_Color_Logo_small_0_0.png">
+                        <div>
+                            <img class="fragment image-general" src="images/Dimitar-Mihaylov.png">
+                            <p class="fragment" style="font-style: italic;">д-р Димитър Михайлов</p>
+                        </div>
+                        <img class="fragment image-general" src="images/deutron-production.png">
+                        <div class="fragment">
+                            <p class="box-green">90% от деутроните: от разпад на $\Delta$-резонанс</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide-8" data-auto-animate>
+                    <h2>Какво не знаем за кварк-глуонната плазма?</h2>
+                    
+                </section>
+
+                <section class="slide-9" data-auto-animate>
+                    <h2>Заключение</h2>
+                    <div class="flow">
+                        <p class="fragment">Много проблеми:</p>
+                        <p class="fragment">теоретични,</p>
+                        <p class="fragment">експериментални,</p>
+                        <p class="fragment">инженерни,</p>
+                        <p class="fragment">философски!</p>
+                    </div>
+                    <p class="fragment box-red">Всички са важни и незаменими!</p>
+                    <p class="fragment custom blur">"Човек трябва да работи,
+                    трябва да работи с цялата си душа, ум, сърце."</p>
+
+                    <p class="fragment">Изберете си интересна задача и работете!</p>
                 </section>
 			
 			</div>
