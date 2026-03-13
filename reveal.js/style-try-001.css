@@ -223,3 +223,21 @@ section li{
 #slide-4{
     gap: 1.5em;
 }
+
+
+/* Define the animation */
+@keyframes zoomRise {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Apply it to a class */
+.zoom-in-rise {
+  animation: zoomRise 0.8s ease-out forwards;
+}
